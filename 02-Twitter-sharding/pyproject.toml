@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "tweets-sharding"
+version = "0.1.0"
+description = ""
+authors = ["Oliver Giles <ogiles@email.com>"]
+packages = [{include = "tweets_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+sqlalchemy = "^2.0.36"
+psycopg2-binary = "^2.9.10"
+python-dotenv = "^1.0.1"
+pydantic = "^2.10.4"
+fastapi = "^0.115.6"
+uvicorn = "^0.34.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
